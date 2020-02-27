@@ -8,7 +8,10 @@ __all__ = [
     'RandomAgent',
     'KeyboardAgent',
     'DispersingAgent',
-    'PathFindingAgent'
+    'PathFindingAgent',
+
+    'Direction',
+    'Game'
 ]
 
 _agent_id = 0
