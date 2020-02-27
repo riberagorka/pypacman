@@ -110,12 +110,12 @@ def get_closest_living_ghost_position(pacman: Agent, ghosts: [Agent], get_distan
     living_ghost_positions = [g.position for g in ghosts if g.alive]
 
     closest, min_distance = (-1, -1), 1000000000000
-    d = []
+
     for i, position in enumerate(living_ghost_positions):
         distance = get_distance(pacman.position, position)
-        d.append(distance)
+
         if distance < min_distance:
             min_distance = distance
             closest = position
-    # print(min_distance, d)
+
     return closest
